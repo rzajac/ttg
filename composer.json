@@ -1,0 +1,25 @@
+{
+  "name": "rzajac/ttg",
+  "description": "Time table generator",
+  "type": "project",
+  "license": "Apache 2.0",
+  "authors": [
+    {
+      "name": "Rafal Zajac",
+      "email": "rzajac@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "symfony/console": "^3.1.2"
+  },
+  "bin": [
+    "gcp"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Kicaj\\Ttg\\": "src/",
+      "Kicaj\\Tests\\Ttg\\": "test/"
+    }
+  }
+}
