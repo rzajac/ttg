@@ -90,6 +90,6 @@ class WorkDay
 
     function __toString()
     {
-        return strftime("%Y-%m-%d\t%A", $this->date->getTimestamp()) . "\t" . $this->hoursWorked;
+        return strftime("%A, %Y-%m-%d\t", $this->date->getTimestamp()) . "\t\t" . $this->hoursWorked;
     }
 }
