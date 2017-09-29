@@ -72,6 +72,7 @@ class Ttg
      */
     public function __construct($year, $month, $total = 160, $locale = 'pl_PL')
     {
+        setlocale(LC_TIME, "");
         setlocale(LC_TIME, $locale);
         $this->startDate = DateTime::createFromFormat('Y-m-d', $year . '-' . $month . '-01');
         if (!$this->startDate) {
